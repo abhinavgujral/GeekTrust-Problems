@@ -27,8 +27,8 @@ public class Geektrust {
 
     private static void readAllCommands ( List< String> getAllLines ) {
 
-        for (String eachLines : getAllLines) {
-            String[] commands = eachLines.trim().split(" ");
+        for (String eachLine : getAllLines) {
+            String[] commands = eachLine.trim().split(" ");
             if(commands[0].equals(Commands.FASTAG.toString())){
                 Fastag.addFastagBalance (commands[1],Integer.parseInt ( commands[2] ));
             }
